@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    ".env*": "dotenv",
+    "iostream": "cpp",
+    "ostream": "cpp",
+    "regex": "cpp"
+  }
+}
