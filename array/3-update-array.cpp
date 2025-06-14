@@ -22,7 +22,7 @@ int main()
     cout << "Enter the number of elements (max 10): ";
     cin>>size;
 
-    // Taking array elements input
+    // Input: Insert array elements from user
     cout << "Insert " << size << " array elements: ";
     for(int i = 0; i<size; i++)
     {
