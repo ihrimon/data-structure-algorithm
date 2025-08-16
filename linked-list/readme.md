@@ -1,4 +1,4 @@
-/\*
+/*
 A linked list is a linear data structure which can store a collection of "nodes" connected together via links i.e. pointers. Linked lists nodes are not stored at a contiguous location, rather they are linked using pointers to the different memory locations. A node consists of the data value and a pointer to the address of the next node within the linked list.
 
 A linked list is a dynamic linear data structure whose memory size can be allocated or de-allocated at run time based on the operation insertion or deletion, this helps in using system memory efficiently. Linked lists can be used to implment various data structures like a stack, queue, graph, hash maps, etc.
@@ -16,7 +16,7 @@ A linked list consists of nodes with some sort of data, and a pointer, or link, 
 
 A linked list is a linear data structure that includes a series of connected nodes. Here, each node stores the data and the address of the next node.
 
-\*/
+*/
 ![alt text](image-4.png)
 
 ### Linked List vs Array
