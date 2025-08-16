@@ -1,73 +1,73 @@
+// delete a tail node from the linked list
+
+/**
+ * Time Complexity: O(N), 
+ * Space Complexity: O (1)
+ */
 #include <iostream>
 using namespace std;
 
-/* Node class to represent a node of the linked list. */
 class Node {
 public:
     int data;
-    Node* next;
+    Node *next;
 
-    // initialize a new node
-    Node(int new_data) {
-        data = new_data;
-        next = nullptr;
+    Node(int data) {
+        this->data = data;
+        this->next = nullptr;
     }
 };
 
-// appends a new node at the end and returns the head.
-Node* append(Node* head, int new_data) {
+void deleteTail(Node*& head) {
   
-    // Create a new node
-    Node* new_node = new Node(new_data);
-
-    // If the Linked List is empty, make
-    // the new node as the head and return
+  	// Check if the list is empty
     if (head == nullptr) {
-        return new_node;
+        cout << "List is empty." << endl;
+        return;
     }
-
-    // Store the head reference in a temporary variable
-    Node* tail_node = head;
-
-    // Traverse till the last node
-    while (tail_node->next != nullptr) {
-        tail_node = tail_node->next;
+  	
+  	// Check if it contains only one element
+    if (head->next == nullptr) {
+        delete head;
+        head = nullptr;
+        return;
     }
-
-    // Change the next pointer of the last node 
-    // to point to the new node
-    tail_node->next = new_node;
-
-    // Return the head of the list
-    return head;
-}
-
-// Function to print the linked list.
-void printList(Node* node) {
-    while (node != nullptr) {
-        cout << " " << node->data;
-        node = node->next;
+  	
+  	// Traverse to the tail node
+    Node* temp = head;
+    while (temp->next->next != nullptr) {
+        temp = temp->next;
     }
-}
-
-// Driver code
-int main() {
   
-    Node* head = new Node(1);
-    head->next = new Node(2);
-    head->next->next = new Node(3);
-    head->next->next->next = new Node(4);
-    head->next->next->next->next = new Node(5);
+  	// delete the tail node
+    delete temp->next;
+    temp->next = nullptr;
+}
 
-    cout << "Created Linked list is:";
-    printList(head);
+int main() {
 
-    // Example of appending a node at the end
-    head = append(head, 0);
+    // Create a simple linked list
+    Node *head = new Node(3);
+    head->next = new Node(12);
+    head->next->next = new Node(15);
+  	head->next->next->next = new Node(18);
+    cout << "Original List: ";
+    Node *temp = head;
+    while (temp != nullptr) {
+        cout << temp->data << " -> ";
+        temp = temp->next;
+    }
+    cout << "NULL" << endl;
 
-    // after inserting 0 at the end
-    cout << "\nAfter inserting 0 at the end:";
-    printList(head);
+    deleteTail(head); // Deleting the tail node
+
+    cout << "List after deleting head: ";
+    temp = head;
+    while (temp != nullptr) {
+        cout << temp->data << " -> ";
+        temp = temp->next;
+    }
+    cout << "NULL" << endl;
 
     return 0;
 }

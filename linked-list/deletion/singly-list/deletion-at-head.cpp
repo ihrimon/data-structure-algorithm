@@ -1,4 +1,9 @@
 // delete a head node from the linked list
+
+/**
+ * Time Complexity: O(1)
+ * Space Complexity: O(1)
+ */
 #include <iostream>
 using namespace std;
 
@@ -60,3 +65,4 @@ int main() {
 
     return 0;
 }
+
