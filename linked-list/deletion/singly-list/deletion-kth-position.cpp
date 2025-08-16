@@ -1,4 +1,8 @@
-// Insertion in a single linked list at a specified position
+// Deletion in a single linked list at a specified position
+/**
+ * Time Complexity: O(N), 
+ * Space Complexity: O (1)
+ */
 #include <bits/stdc++.h>
 using namespace std;
 

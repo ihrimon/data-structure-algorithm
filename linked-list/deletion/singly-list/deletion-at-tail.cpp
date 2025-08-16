@@ -18,35 +18,43 @@ public:
     }
 };
 
-void deleteTail(Node*& head) {
-  
-  	// Check if the list is empty
-    if (head == nullptr) {
-        cout << "List is empty." << endl;
+// Function to delete a node at a specific position
+void deleteAtPosition(Node*& head, int pos) {
+    // if invalid position or list is empty
+    if (head == nullptr || pos < 1) {
+        cout << "Invalid position or list is empty." << endl;
         return;
     }
-  	
-  	// Check if it contains only one element
-    if (head->next == nullptr) {
-        delete head;
-        head = nullptr;
+
+    // Deleting head node
+    if (pos == 1) {
+        Node* temp = head;
+        head = head->next;
+        delete temp;
         return;
     }
-  	
-  	// Traverse to the tail node
-    Node* temp = head;
-    while (temp->next->next != nullptr) {
-        temp = temp->next;
+
+    // Traverse to the node before the target position
+    Node* current = head;
+    for (int i = 1; i < pos - 1 && current != nullptr; i++) {
+        current = current->next;
     }
-  
-  	// delete the tail node
-    delete temp->next;
-    temp->next = nullptr;
+
+    // If position is greater than the number of nodes
+    if (current == nullptr || current->next == nullptr) {
+        cout << "Position exceeds list length." << endl;
+        return;
+    }
+
+    // Delete the node at the target position
+    Node* temp = current->next;
+    current->next = temp->next;
+    delete temp;
 }
 
 int main() {
 
-    // Create a simple linked list
+    // Create a simple linked list: 3 -> 12 -> 15 -> 18
     Node *head = new Node(3);
     head->next = new Node(12);
     head->next->next = new Node(15);
@@ -59,7 +67,7 @@ int main() {
     }
     cout << "NULL" << endl;
 
-    deleteTail(head); // Deleting the tail node
+    deleteAtPosition(head, 2);  // Deleting node at position 3
 
     cout << "List after deleting head: ";
     temp = head;
