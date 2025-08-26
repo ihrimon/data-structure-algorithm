@@ -67,9 +67,7 @@ In case of arrays, the size is given at the time of creation and so arrays are o
 
 - Insertion
 - Deletion
-- Display
 - Search
-- Delete
 
 ### Time and Space Complexity of Linked Lists
 
