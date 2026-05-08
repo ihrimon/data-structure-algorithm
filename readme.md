@@ -1,85 +1,301 @@
-# 📚 DSA Interview Preparation
+### 🔵 Phase 1: Foundation (Week 1–4)
 
-<div style="border:1px solid #ffffff15; padding-bottom:0px; padding-top:10px; padding-left:20px; margin-top:10px; border-radius:6px;">
-<details>
-<summary><b>1️⃣ Complexity Analysis</b></summary>
-<ul style="list-style:none; padding-left:0; margin-top:15px; margin-bottom:30px; font-size:13px; margin-left:18px">
-  <li>⚪ Time Complexity: Big-O, Big-Theta, Big-Omega</li>
-  <li>⚪ Space Complexity</li>
-  <li>⚪ Best, Worst, Average Case</li>
-  <li>⚪ Common complexities: O(1), O(log n), O(n), O(n log n), O(n²)</li>
-</ul>
-</details>
-</div>
+> **Goal:** Build a solid base. Without this, everything else will be harder.
 
-<div style="border:1px solid #ffffff15; padding-bottom:0px; padding-top:10px; padding-left:20px; margin-top:10px; border-radius:6px;">
-<details>
-<summary><b>2️⃣ Basic Data Structures</b></summary>
-<ul style="list-style:none; padding-left:0; margin-top:15px; margin-bottom:30px; font-size:13px; margin-left:18px">
-  <li>⚪ <b>Arrays:</b> Traversal, Insertion, Deletion, Rotation, Reverse, Largest/Smallest, Move Zeroes</li>
-  <li>⚪ <b>Strings:</b> Reverse, Palindrome, Anagram, Character Frequency</li>
-  <li>⚪ <b>Linked List:</b> Singly, Doubly, Circular, Insert/Delete, Reverse, Detect Loop</li>
-  <li>⚪ <b>Stack:</b> Array/Linked List, Balanced Parentheses, Next Greater Element</li>
-  <li>⚪ <b>Queue:</b> Normal, Circular, Deque, Priority Queue</li>
-  <li>⚪ <b>Hash Tables:</b> unordered_map, unordered_set, Collision Handling</li>
-</ul>
-</details>
-</div>
+#### 📦 Big-O Notation & Complexity Analysis
+- [ ] Understand Time Complexity (O(1), O(n), O(log n), O(n²))
+- [ ] Understand Space Complexity
+- [ ] Best / Average / Worst Case analysis
+- [ ] Practice deriving complexity by reading code
 
-<div style="border:1px solid #ffffff15; padding-bottom:0px; padding-top:10px; padding-left:20px; margin-top:10px; border-radius:6px;">
-<details>
-<summary><b>3️⃣ Searching & Sorting</b></summary>
-<ul style="list-style:none; padding-left:0; margin-top:15px; margin-bottom:30px; font-size:13px; margin-left:18px">
-  <li>⚪ <b>Searching:</b> Linear Search, Binary Search, First/Last Occurrence, Rotated Array Search</li>
-  <li>⚪ <b>Sorting:</b> Bubble, Insertion, Selection, Merge, Quick, Heap Sort</li>
-</ul>
-</details>
-</div>
+#### 📦 Array & String
+- [ ] Array creation, traversal, insertion, deletion
+- [ ] Two Pointer technique
+- [ ] Sliding Window technique
+- [ ] String manipulation (reverse, palindrome, anagram)
+- [ ] Prefix Sum array
+- [ ] Kadane's Algorithm (Maximum Subarray)
 
-<div style="border:1px solid #ffffff15; padding-bottom:0px; padding-top:10px; padding-left:20px; margin-top:10px; border-radius:6px;">
-<details>
-<summary><b>4️⃣ Trees & Graphs</b></summary>
-<ul style="list-style:none; padding-left:0; margin-top:15px; margin-bottom:30px; font-size:13px; margin-left:18px">
-  <li>⚪ <b>Trees:</b> Binary Tree, BST, Traversals (Inorder, Preorder, Postorder), LCA, Height, Diameter</li>
-  <li>⚪ <b>Graphs:</b> Representation, BFS, DFS, Shortest Path (Dijkstra, Bellman-Ford), MST (Prim/Kruskal)</li>
-</ul>
-</details>
-</div>
+**Practice Problems:**
+- [ ] Two Sum
+- [ ] Best Time to Buy and Sell Stock
+- [ ] Contains Duplicate
+- [ ] Maximum Subarray
+- [ ] Merge Sorted Array
+- [ ] Valid Anagram
+- [ ] Reverse String
+- [ ] Longest Substring Without Repeating Characters
 
-<div style="border:1px solid #ffffff15; padding-bottom:0px; padding-top:10px; padding-left:20px; margin-top:10px; border-radius:6px;">
-<details>
-<summary><b>5️⃣ Advanced Data Structures</b></summary>
-<ul style="list-style:none; padding-left:0; margin-top:15px; margin-bottom:30px; font-size:13px; margin-left:18px">
-  <li>⚪ Trie</li>
-  <li>⚪ Segment Tree</li>
-  <li>⚪ Fenwick Tree (Binary Indexed Tree)</li>
-  <li>⚪ Disjoint Set</li>
-  <li>⚪ Suffix Tree/Array</li>
-  <li>⚪ B/B+ Trees</li>
-  <li>⚪ Skip List</li>
-  <li>⚪ ISAM</li>
-  <li>⚪ 2-3 Trees</li>
-  <li>⚪ Heap: Min Heap, Max Heap, Heapify</li>
-</ul>
-</details>
-</div>
+---
 
-<div style="border:1px solid #ffffff15; padding-bottom:0px; padding-top:10px; padding-left:20px; margin-top:10px; border-radius:6px;">
-<details>
-<summary><b>6️⃣ Algorithmic & Problem Solving Patterns</b></summary>
-<ul style="list-style:none; padding-left:0; margin-top:15px; margin-bottom:30px; font-size:13px; margin-left:18px">
-  <li>⚪ Brute Force</li>
-  <li>⚪ Backtracking (N-Queens, Rat in Maze)</li>
-  <li>⚪ Greedy</li>
-  <li>⚪ Randomized</li>
-  <li>⚪ Divide & Conquer</li>
-  <li>⚪ Recursion (Factorial, Fibonacci, Tower of Hanoi)</li>
-  <li>⚪ Dynamic Programming Basics</li>
-  <li>⚪ Two Pointers</li>
-  <li>⚪ Sliding Window</li>
-  <li>⚪ Prefix Sum</li>
-  <li>⚪ Binary Search on Answer</li>
-  <li>✔️ Bit Manipulation Tricks</li>
-</ul>
-</details>
-</div>
+### 🟡 Phase 2: Core DSA (Week 5–10)
+
+> **Goal:** These topics appear in almost every interview and daily developer work.
+
+#### 📦 Linked List
+- [ ] Singly Linked List (create, insert, delete, traverse)
+- [ ] Doubly Linked List
+- [ ] Fast & Slow Pointer technique
+- [ ] Reverse a Linked List
+- [ ] Detect Cycle (Floyd's Algorithm)
+- [ ] Merge Two Sorted Lists
+- [ ] Find Middle of Linked List
+
+**Practice Problems:**
+- [ ] Reverse Linked List
+- [ ] Linked List Cycle
+- [ ] Merge Two Sorted Lists
+- [ ] Remove Nth Node From End
+- [ ] Palindrome Linked List
+
+---
+
+#### 📦 Stack & Queue
+- [ ] Stack implementation (using Array & Linked List)
+- [ ] Queue implementation
+- [ ] Monotonic Stack
+- [ ] Deque (Double Ended Queue)
+- [ ] Implement Queue using Stacks (and vice versa)
+
+**Practice Problems:**
+- [ ] Valid Parentheses
+- [ ] Min Stack
+- [ ] Implement Queue using Stacks
+- [ ] Daily Temperatures
+- [ ] Evaluate Reverse Polish Notation
+
+---
+
+#### 📦 HashMap & HashSet
+- [ ] How HashMap works internally (hashing, collision)
+- [ ] HashSet vs HashMap
+- [ ] Frequency Counter pattern
+- [ ] Grouping / Categorizing data
+
+**Practice Problems:**
+- [ ] Two Sum (using HashMap)
+- [ ] Group Anagrams
+- [ ] Top K Frequent Elements
+- [ ] Longest Consecutive Sequence
+- [ ] Subarray Sum Equals K
+
+---
+
+#### 📦 Recursion & Backtracking
+- [ ] Base case and recursive case
+- [ ] Understanding the Call Stack
+- [ ] Memoization (Top-down DP)
+- [ ] Backtracking pattern
+- [ ] Permutations & Combinations
+
+**Practice Problems:**
+- [ ] Fibonacci (Recursive + Memoized)
+- [ ] Factorial
+- [ ] Power of Two
+- [ ] Subsets
+- [ ] Permutations
+- [ ] Combination Sum
+- [ ] Word Search
+
+---
+
+#### 📦 Sorting Algorithms
+- [ ] Bubble Sort (understand the concept)
+- [ ] Selection Sort
+- [ ] Insertion Sort
+- [ ] Merge Sort ⭐ (most important)
+- [ ] Quick Sort ⭐
+- [ ] Counting Sort / Radix Sort (when to use them)
+- [ ] Know the complexity of built-in sort functions
+
+---
+
+#### 📦 Binary Search
+- [ ] Classic Binary Search
+- [ ] Search in Rotated Sorted Array
+- [ ] Binary Search on Answer (conceptual)
+- [ ] Lower Bound / Upper Bound
+
+**Practice Problems:**
+- [ ] Binary Search
+- [ ] Search Insert Position
+- [ ] Find Minimum in Rotated Sorted Array
+- [ ] Search a 2D Matrix
+- [ ] Koko Eating Bananas
+
+---
+
+### 🟠 Phase 3: Advanced Topics (Week 11–14)
+
+> **Goal:** Required for mid-level interviews and complex real-world problems.
+
+#### 📦 Tree & Binary Tree
+- [ ] Tree terminology (root, leaf, height, depth)
+- [ ] Binary Tree traversal: Inorder, Preorder, Postorder
+- [ ] Level Order Traversal (BFS)
+- [ ] Binary Search Tree (BST) — insert, search, delete
+- [ ] Validate BST
+- [ ] Lowest Common Ancestor (LCA)
+- [ ] Tree Height / Depth
+
+**Practice Problems:**
+- [ ] Maximum Depth of Binary Tree
+- [ ] Invert Binary Tree
+- [ ] Same Tree
+- [ ] Symmetric Tree
+- [ ] Path Sum
+- [ ] Binary Tree Level Order Traversal
+- [ ] Validate Binary Search Tree
+- [ ] Lowest Common Ancestor of BST
+
+---
+
+#### 📦 Graph
+- [ ] Graph representation (Adjacency List & Matrix)
+- [ ] BFS (Breadth-First Search)
+- [ ] DFS (Depth-First Search)
+- [ ] Cycle Detection (Directed & Undirected)
+- [ ] Topological Sort
+- [ ] Union-Find (Disjoint Set)
+
+**Practice Problems:**
+- [ ] Number of Islands
+- [ ] Clone Graph
+- [ ] Course Schedule (Cycle Detection)
+- [ ] Pacific Atlantic Water Flow
+- [ ] Rotting Oranges (BFS)
+
+---
+
+#### 📦 Dynamic Programming (DP)
+- [ ] Core DP concepts (Overlapping subproblems, Optimal substructure)
+- [ ] Top-Down approach (Memoization)
+- [ ] Bottom-Up approach (Tabulation)
+- [ ] 1D DP patterns
+- [ ] 2D DP patterns
+
+**Practice Problems:**
+- [ ] Climbing Stairs
+- [ ] House Robber
+- [ ] Coin Change
+- [ ] Longest Common Subsequence
+- [ ] 0/1 Knapsack
+- [ ] Longest Increasing Subsequence
+- [ ] Edit Distance
+
+---
+
+#### 📦 Heap / Priority Queue
+- [ ] Min Heap & Max Heap
+- [ ] Heap operations (insert, extract, heapify)
+- [ ] Top K Elements pattern
+- [ ] Merge K Sorted Lists
+
+**Practice Problems:**
+- [ ] Kth Largest Element in an Array
+- [ ] Top K Frequent Elements
+- [ ] Find Median from Data Stream
+- [ ] Task Scheduler
+
+---
+
+### 🔴 Phase 4: Interview Prep (Week 15–16)
+
+> **Goal:** Pattern recognition and mock interview practice.
+
+#### 📦 14 Must-Know Problem Solving Patterns
+- [ ] Two Pointers
+- [ ] Sliding Window
+- [ ] Fast & Slow Pointers
+- [ ] Merge Intervals
+- [ ] Cyclic Sort
+- [ ] In-place Reversal of Linked List
+- [ ] Tree BFS
+- [ ] Tree DFS
+- [ ] Two Heaps
+- [ ] Subsets (Backtracking)
+- [ ] Modified Binary Search
+- [ ] Top K Elements
+- [ ] K-way Merge
+- [ ] Topological Sort
+
+#### 📦 Interview Soft Skills
+- [ ] Practice "thinking out loud" while solving
+- [ ] Always start with brute force → then optimize
+- [ ] Identify and handle edge cases before coding
+- [ ] Always state Time & Space complexity after solving
+- [ ] Ask clarifying questions before jumping into code
+
+---
+
+## 🗂️ Suggested GitHub Repository Structure
+
+```
+dsa-journey/
+├── README.md                    ← This file
+├── phase-1-foundation/
+│   ├── big-o/
+│   ├── arrays/
+│   └── strings/
+├── phase-2-core/
+│   ├── linked-list/
+│   ├── stack-queue/
+│   ├── hashmap/
+│   ├── recursion/
+│   ├── sorting/
+│   └── binary-search/
+├── phase-3-advanced/
+│   ├── trees/
+│   ├── graphs/
+│   ├── dynamic-programming/
+│   └── heap/
+├── phase-4-interview/
+│   ├── patterns/
+│   └── mock-problems/
+└── notes/
+    └── cheatsheet.md
+```
+
+---
+
+## 🌐 Recommended Resources
+
+| Resource | Type | Link |
+|----------|------|------|
+| LeetCode | Practice Platform | leetcode.com |
+| NeetCode | Video + Curated Problems | neetcode.io |
+| Visualgo | Algorithm Visualizer | visualgo.net |
+| CS50 DSA | Free Course | cs50.harvard.edu |
+| GeeksForGeeks | Reference & Articles | geeksforgeeks.org |
+
+---
+
+
+## 🏷️ Commit Message Convention
+
+```
+✅ feat: solve Two Sum using HashMap
+📝 notes: add Big-O complexity notes
+🔁 refactor: optimize Merge Sort solution
+🐛 fix: handle edge case in Binary Search
+```
+
+---
+
+## 🎯 Interview Focus by Company Type
+
+| Company Type | Focus Areas |
+|-------------|-------------|
+| Startup | Array, HashMap, String, Basic Tree |
+| Mid-size | + LinkedList, Stack, Sorting, Binary Search |
+| FAANG / Top Tier | + Graph, DP, Heap, Advanced Tree |
+
+---
+
+> **Remember:** A little every day. Consistency beats intensity.  
+> Commit every solution — that's your proof of progress. 💪
+
+---
+
+*Last Updated: 2026*  
+*Maintained by: [Imam Hassan Rimon]*
