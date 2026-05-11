@@ -56,47 +56,49 @@
   console.log(removeDuplicates([1, 2, 2, 3, 1, 4])); // [1, 2, 3, 4]
 }
 
-
-/ ============================================================
-// O(n) — Recursive Call Stack Space
-// Each recursive call adds a frame to the call stack
-// ============================================================
-
-// Example 9: Recursive sum — O(n) stack space
-function recursiveSum(n) {
-  if (n <= 0) return 0; // base case
-  return n + recursiveSum(n - 1); // adds 1 frame per call
-}
-// Space: O(n) — n frames on the call stack at once
-//   recursiveSum(5)
-//     recursiveSum(4)
-//       recursiveSum(3)
-//         recursiveSum(2)
-//           recursiveSum(1)
-//             recursiveSum(0) ← base case
-console.log(recursiveSum(5)); // 15
-
-// Example 10: Fibonacci — naive O(n) stack space
-function fib(n) {
-  if (n <= 1) return n;
-  return fib(n - 1) + fib(n - 2); // max depth = n frames
-}
-// Space: O(n) — max depth of call stack
-// Time: O(2^n) — very slow without memoization
-console.log(fib(10)); // 55
-
-// Example 11: vs iterative Fibonacci — O(1) space
-function fibIterative(n) {
-  if (n <= 1) return n;
-  let prev = 0,
-    curr = 1; // O(1) — just two variables
-  for (let i = 2; i <= n; i++) {
-    [prev, curr] = [curr, prev + curr];
+// Example 5: Recursive sum — O(n) stack space
+{
+  // O(n) — Recursive Call Stack Space
+  // Each recursive call adds a frame to the call stack
+  function recursiveSum(n) {
+    if (n <= 0) return 0; // base case
+    return n + recursiveSum(n - 1); // adds 1 frame per call
   }
-  return curr;
+  // Space: O(n) — n frames on the call stack at once
+  //   recursiveSum(5)
+  //     recursiveSum(4)
+  //       recursiveSum(3)
+  //         recursiveSum(2)
+  //           recursiveSum(1)
+  //             recursiveSum(0) ← base case
+  console.log(recursiveSum(5)); // 15
 }
-// Space: O(1) — no call stack growth
-console.log(fibIterative(10)); // 55
+
+// Example 6: Fibonacci — naive O(n) stack space
+{
+  function fib(n) {
+    if (n <= 1) return n;
+    return fib(n - 1) + fib(n - 2); // max depth = n frames
+  }
+  // Space: O(n) — max depth of call stack
+  // Time: O(2^n) — very slow without memoization
+  console.log(fib(10)); // 55
+}
+
+// Example 7: vs iterative Fibonacci — O(1) space
+{
+  function fibIterative(n) {
+    if (n <= 1) return n;
+    let prev = 0,
+      curr = 1; // O(1) — just two variables
+    for (let i = 2; i <= n; i++) {
+      [prev, curr] = [curr, prev + curr];
+    }
+    return curr;
+  }
+  // Space: O(1) — no call stack growth
+  console.log(fibIterative(10)); // 55
+}
 
 /*
   SUMMARY TABLE
@@ -107,7 +109,4 @@ console.log(fibIterative(10)); // 55
    - arr.map(), arr.filter(), arr.slice() → new arrays
     - Recursive functions (n frames on call stack)
     - Storing results in a growing data structure
- O(n²) space:
-   - 2D matrix of size n×n
-  - Storing all pairs
 */
