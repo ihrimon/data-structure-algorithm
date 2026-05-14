@@ -3,12 +3,16 @@
 > **Goal:** Build a solid base. Without this, everything else will be harder.
 
 #### 📦 Big-O Notation & Complexity Analysis
-- [ ] Understand Time Complexity (O(1), O(n), O(log n), O(n²))
-- [ ] Understand Space Complexity
-- [ ] Best / Average / Worst Case analysis
+
+- [X] Understand Time Complexity (O(1), O(n), O(log n), O(n²))
+- [X] Understand Space Complexity
+- [X] Best / Average / Worst Case analysis
 - [ ] Practice deriving complexity by reading code
 
+![alt text](image.png)
+
 #### 📦 Array & String
+
 - [ ] Array creation, traversal, insertion, deletion
 - [ ] Two Pointer technique
 - [ ] Sliding Window technique
@@ -17,6 +21,7 @@
 - [ ] Kadane's Algorithm (Maximum Subarray)
 
 **Practice Problems:**
+
 - [ ] Two Sum
 - [ ] Best Time to Buy and Sell Stock
 - [ ] Contains Duplicate
@@ -33,6 +38,7 @@
 > **Goal:** These topics appear in almost every interview and daily developer work.
 
 #### 📦 Linked List
+
 - [ ] Singly Linked List (create, insert, delete, traverse)
 - [ ] Doubly Linked List
 - [ ] Fast & Slow Pointer technique
@@ -42,6 +48,7 @@
 - [ ] Find Middle of Linked List
 
 **Practice Problems:**
+
 - [ ] Reverse Linked List
 - [ ] Linked List Cycle
 - [ ] Merge Two Sorted Lists
@@ -51,6 +58,7 @@
 ---
 
 #### 📦 Stack & Queue
+
 - [ ] Stack implementation (using Array & Linked List)
 - [ ] Queue implementation
 - [ ] Monotonic Stack
@@ -58,6 +66,7 @@
 - [ ] Implement Queue using Stacks (and vice versa)
 
 **Practice Problems:**
+
 - [ ] Valid Parentheses
 - [ ] Min Stack
 - [ ] Implement Queue using Stacks
@@ -67,12 +76,14 @@
 ---
 
 #### 📦 HashMap & HashSet
+
 - [ ] How HashMap works internally (hashing, collision)
 - [ ] HashSet vs HashMap
 - [ ] Frequency Counter pattern
 - [ ] Grouping / Categorizing data
 
 **Practice Problems:**
+
 - [ ] Two Sum (using HashMap)
 - [ ] Group Anagrams
 - [ ] Top K Frequent Elements
@@ -82,6 +93,7 @@
 ---
 
 #### 📦 Recursion & Backtracking
+
 - [ ] Base case and recursive case
 - [ ] Understanding the Call Stack
 - [ ] Memoization (Top-down DP)
@@ -89,6 +101,7 @@
 - [ ] Permutations & Combinations
 
 **Practice Problems:**
+
 - [ ] Fibonacci (Recursive + Memoized)
 - [ ] Factorial
 - [ ] Power of Two
@@ -100,6 +113,7 @@
 ---
 
 #### 📦 Sorting Algorithms
+
 - [ ] Bubble Sort (understand the concept)
 - [ ] Selection Sort
 - [ ] Insertion Sort
@@ -111,12 +125,14 @@
 ---
 
 #### 📦 Binary Search
+
 - [ ] Classic Binary Search
 - [ ] Search in Rotated Sorted Array
 - [ ] Binary Search on Answer (conceptual)
 - [ ] Lower Bound / Upper Bound
 
 **Practice Problems:**
+
 - [ ] Binary Search
 - [ ] Search Insert Position
 - [ ] Find Minimum in Rotated Sorted Array
@@ -130,6 +146,7 @@
 > **Goal:** Required for mid-level interviews and complex real-world problems.
 
 #### 📦 Tree & Binary Tree
+
 - [ ] Tree terminology (root, leaf, height, depth)
 - [ ] Binary Tree traversal: Inorder, Preorder, Postorder
 - [ ] Level Order Traversal (BFS)
@@ -139,6 +156,7 @@
 - [ ] Tree Height / Depth
 
 **Practice Problems:**
+
 - [ ] Maximum Depth of Binary Tree
 - [ ] Invert Binary Tree
 - [ ] Same Tree
@@ -151,6 +169,7 @@
 ---
 
 #### 📦 Graph
+
 - [ ] Graph representation (Adjacency List & Matrix)
 - [ ] BFS (Breadth-First Search)
 - [ ] DFS (Depth-First Search)
@@ -159,6 +178,7 @@
 - [ ] Union-Find (Disjoint Set)
 
 **Practice Problems:**
+
 - [ ] Number of Islands
 - [ ] Clone Graph
 - [ ] Course Schedule (Cycle Detection)
@@ -168,6 +188,7 @@
 ---
 
 #### 📦 Dynamic Programming (DP)
+
 - [ ] Core DP concepts (Overlapping subproblems, Optimal substructure)
 - [ ] Top-Down approach (Memoization)
 - [ ] Bottom-Up approach (Tabulation)
@@ -175,6 +196,7 @@
 - [ ] 2D DP patterns
 
 **Practice Problems:**
+
 - [ ] Climbing Stairs
 - [ ] House Robber
 - [ ] Coin Change
@@ -186,12 +208,14 @@
 ---
 
 #### 📦 Heap / Priority Queue
+
 - [ ] Min Heap & Max Heap
 - [ ] Heap operations (insert, extract, heapify)
 - [ ] Top K Elements pattern
 - [ ] Merge K Sorted Lists
 
 **Practice Problems:**
+
 - [ ] Kth Largest Element in an Array
 - [ ] Top K Frequent Elements
 - [ ] Find Median from Data Stream
@@ -204,6 +228,7 @@
 > **Goal:** Pattern recognition and mock interview practice.
 
 #### 📦 14 Must-Know Problem Solving Patterns
+
 - [ ] Two Pointers
 - [ ] Sliding Window
 - [ ] Fast & Slow Pointers
@@ -220,6 +245,7 @@
 - [ ] Topological Sort
 
 #### 📦 Interview Soft Skills
+
 - [ ] Practice "thinking out loud" while solving
 - [ ] Always start with brute force → then optimize
 - [ ] Identify and handle edge cases before coding
@@ -260,16 +286,15 @@ dsa-journey/
 
 ## 🌐 Recommended Resources
 
-| Resource | Type | Link |
-|----------|------|------|
-| LeetCode | Practice Platform | leetcode.com |
-| NeetCode | Video + Curated Problems | neetcode.io |
-| Visualgo | Algorithm Visualizer | visualgo.net |
-| CS50 DSA | Free Course | cs50.harvard.edu |
-| GeeksForGeeks | Reference & Articles | geeksforgeeks.org |
+| Resource      | Type                     | Link              |
+| ------------- | ------------------------ | ----------------- |
+| LeetCode      | Practice Platform        | leetcode.com      |
+| NeetCode      | Video + Curated Problems | neetcode.io       |
+| Visualgo      | Algorithm Visualizer     | visualgo.net      |
+| CS50 DSA      | Free Course              | cs50.harvard.edu  |
+| GeeksForGeeks | Reference & Articles     | geeksforgeeks.org |
 
 ---
-
 
 ## 🏷️ Commit Message Convention
 
@@ -284,11 +309,11 @@ dsa-journey/
 
 ## 🎯 Interview Focus by Company Type
 
-| Company Type | Focus Areas |
-|-------------|-------------|
-| Startup | Array, HashMap, String, Basic Tree |
-| Mid-size | + LinkedList, Stack, Sorting, Binary Search |
-| FAANG / Top Tier | + Graph, DP, Heap, Advanced Tree |
+| Company Type     | Focus Areas                                 |
+| ---------------- | ------------------------------------------- |
+| Startup          | Array, HashMap, String, Basic Tree          |
+| Mid-size         | + LinkedList, Stack, Sorting, Binary Search |
+| FAANG / Top Tier | + Graph, DP, Heap, Advanced Tree            |
 
 ---
 
@@ -297,5 +322,5 @@ dsa-journey/
 
 ---
 
-*Last Updated: 2026*  
-*Maintained by: [Imam Hassan Rimon]*
+_Last Updated: 2026_  
+_Maintained by: [Imam Hassan Rimon]_
