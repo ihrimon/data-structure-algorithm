@@ -4,12 +4,10 @@
 
 #### 📦 Big-O Notation & Complexity Analysis
 
-- [X] Understand Time Complexity (O(1), O(n), O(log n), O(n²))
-- [X] Understand Space Complexity
-- [X] Best / Average / Worst Case analysis
+- [x] Understand Time Complexity (O(1), O(n), O(log n), O(n²))
+- [x] Understand Space Complexity
+- [x] Best / Average / Worst Case analysis
 - [ ] Practice deriving complexity by reading code
-
-![alt text](image.png)
 
 #### 📦 Array & String
 
