@@ -25,7 +25,7 @@
     [arr[i], arr[j]] = [arr[j], arr[i]]; // no loop → O(1)
   }
 
-  // Time: O(1) | Space: O(1)
+  // Complexity = Time: O(1) | Space: O(1)
 }
 
 {
@@ -40,7 +40,7 @@
     return total;
   }
 
-  // Time: O(n) | Space: O(1)
+  // Complexity = Time: O(n) | Space: O(1)
 }
 
 {
@@ -52,7 +52,7 @@
     // O(n) + O(n) = O(2n) → drop constant → O(n)
   }
 
-  // Time: O(n) | Space: O(1)
+  // Complexity = Time: O(n) | Space: O(1)
 }
 
 {
@@ -69,7 +69,7 @@
     // O(n) × O(n) = O(n²)
   }
 
-  // Complexity: Time: O(n²) | Space: O(1)
+  // Complexity = Time: O(n²) | Space: O(1)
 }
 
 {
@@ -88,45 +88,46 @@
     return -1;
   }
 
-  // Complexity: Time: O(log n) | Space: O(1)
+  // Complexity = Time: O(log n) | Space: O(1)
 }
 
-// ============================================================
-// PATTERN 6: Loop + inner O(log n) → O(n log n)
-// ============================================================
+{
+  // PATTERN 6: Loop + inner O(log n) → O(n log n)
 
-// Each element → binary search = O(n) × O(log n) = O(n log n)
-function searchEachInSorted(arr, sorted) {
-  for (let val of arr) {
-    // O(n)
-    binarySearch(sorted, val); // O(log n) each time
-  }
-  // Total: O(n log n)
-}
-
-// Time: O(n log n) | Space: O(1)
-
-// ============================================================
-// DOMINANT TERM RULE
-// ============================================================
-
-function mixed(arr) {
-  // Part 1: O(n²)
-  for (let i = 0; i < arr.length; i++) {
-    for (let j = 0; j < arr.length; j++) {
-      console.log(arr[i] + arr[j]);
+  // Each element → binary search = O(n) × O(log n) = O(n log n)
+  function searchEachInSorted(arr, sorted) {
+    for (let val of arr) {
+      // O(n)
+      binarySearch(sorted, val); // O(log n) each time
     }
+    // Total: O(n log n)
   }
 
-  // Part 2: O(n)
-  for (let x of arr) {
-    console.log(x);
-  }
-
-  // O(n²) + O(n) → O(n²)  ← n² dominates, n is dropped
+  // Complexity = Time: O(n log n) | Space: O(1)
 }
 
-// Complexity: Time: O(n²) | Space: O(1)
+{
+  // DOMINANT TERM RULE
+
+  function mixed(arr) {
+    // Part 1: O(n²)
+    for (let i = 0; i < arr.length; i++) {
+      for (let j = 0; j < arr.length; j++) {
+        console.log(arr[i] + arr[j]);
+      }
+    }
+
+    // Part 2: O(n)
+    for (let x of arr) {
+      console.log(x);
+    }
+
+    // O(n²) + O(n) → O(n²)  ← n² dominates, n is dropped
+  }
+
+  // Complexity = Time: O(n²) | Space: O(1)
+}
+
 {
   // DIFFERENT INPUT VARIABLES
 
@@ -157,7 +158,7 @@ function mixed(arr) {
     if (n <= 1) return 1;
     return n * factorial(n - 1); // n frames on call stack
   }
-  // Time: O(n) | Space: O(n)
+  // Complexity = Time: O(n) | Space: O(n)
 
   // O(log n) recursion — halves each call
   function binarySearchRecursive(arr, t, l = 0, r = arr.length - 1) {
@@ -168,23 +169,23 @@ function mixed(arr) {
     return binarySearchRecursive(arr, t, l, mid - 1);
     // halves each call → log n levels deep
   }
-  // Complexity: Time: O(log n) | Space: O(log n)
+  // Complexity = Time: O(log n) | Space: O(log n)
 
   // O(2^n) recursion — branches into 2 each call (avoid for large n!)
   function fibNaive(n) {
     if (n <= 1) return n;
     return fibNaive(n - 1) + fibNaive(n - 2); // 2 branches, n deep
   }
-  // Time: O(2^n) | Space: O(n)
+  // Complexity = Time: O(2^n) | Space: O(n)
 
   // O(n) fibonacci with memoization — fix for O(2^n)
   function fibMemo(n, memo = {}) {
     if (n <= 1) return n;
-    if (memo[n]) return memo[n];
+    if (n in memo) return memo[n];
     memo[n] = fibMemo(n - 1, memo) + fibMemo(n - 2, memo);
     return memo[n];
   }
-  // Time: O(n) | Space: O(n)
+  // Complexity = Time: O(n) | Space: O(n)
 }
 
 /*

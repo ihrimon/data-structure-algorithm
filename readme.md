@@ -1,15 +1,13 @@
-### 🔵 Phase 1: Foundation (Week 1–4)
+## Phase 1: Foundation (Week 1–4)
 
-> **Goal:** Build a solid base. Without this, everything else will be harder.
-
-#### 📦 Big-O Notation & Complexity Analysis
+### 👉 Big-O Notation & Complexity Analysis
 
 - [x] Understand Time Complexity (O(1), O(n), O(log n), O(n²))
 - [x] Understand Space Complexity
 - [x] Best / Average / Worst Case analysis
-- [ ] Practice deriving complexity by reading code
+- [x] Practice deriving complexity by reading code
 
-#### 📦 Array & String
+### 👉 Array & String
 
 - [ ] Array creation, traversal, insertion, deletion
 - [ ] Two Pointer technique
@@ -31,11 +29,9 @@
 
 ---
 
-### 🟡 Phase 2: Core DSA (Week 5–10)
+## Phase 2: Core DSA (Week 5–10)
 
-> **Goal:** These topics appear in almost every interview and daily developer work.
-
-#### 📦 Linked List
+### 👉 Linked List
 
 - [ ] Singly Linked List (create, insert, delete, traverse)
 - [ ] Doubly Linked List
@@ -55,7 +51,7 @@
 
 ---
 
-#### 📦 Stack & Queue
+### 👉 Stack & Queue
 
 - [ ] Stack implementation (using Array & Linked List)
 - [ ] Queue implementation
@@ -73,7 +69,7 @@
 
 ---
 
-#### 📦 HashMap & HashSet
+### 👉 HashMap & HashSet
 
 - [ ] How HashMap works internally (hashing, collision)
 - [ ] HashSet vs HashMap
@@ -90,7 +86,7 @@
 
 ---
 
-#### 📦 Recursion & Backtracking
+### 📦 Recursion & Backtracking
 
 - [ ] Base case and recursive case
 - [ ] Understanding the Call Stack
@@ -110,19 +106,19 @@
 
 ---
 
-#### 📦 Sorting Algorithms
+### 👉 Sorting Algorithms
 
 - [ ] Bubble Sort (understand the concept)
 - [ ] Selection Sort
 - [ ] Insertion Sort
-- [ ] Merge Sort ⭐ (most important)
-- [ ] Quick Sort ⭐
+- [ ] Merge Sort (most important)
+- [ ] Quick Sort
 - [ ] Counting Sort / Radix Sort (when to use them)
 - [ ] Know the complexity of built-in sort functions
 
 ---
 
-#### 📦 Binary Search
+### 👉Binary Search
 
 - [ ] Classic Binary Search
 - [ ] Search in Rotated Sorted Array
@@ -139,11 +135,9 @@
 
 ---
 
-### 🟠 Phase 3: Advanced Topics (Week 11–14)
+## Phase 3: Advanced Topics (Week 11–14)
 
-> **Goal:** Required for mid-level interviews and complex real-world problems.
-
-#### 📦 Tree & Binary Tree
+### 👉 Tree & Binary Tree
 
 - [ ] Tree terminology (root, leaf, height, depth)
 - [ ] Binary Tree traversal: Inorder, Preorder, Postorder
@@ -166,7 +160,7 @@
 
 ---
 
-#### 📦 Graph
+### 👉 Graph
 
 - [ ] Graph representation (Adjacency List & Matrix)
 - [ ] BFS (Breadth-First Search)
@@ -185,7 +179,7 @@
 
 ---
 
-#### 📦 Dynamic Programming (DP)
+### 👉 Dynamic Programming (DP)
 
 - [ ] Core DP concepts (Overlapping subproblems, Optimal substructure)
 - [ ] Top-Down approach (Memoization)
@@ -205,7 +199,7 @@
 
 ---
 
-#### 📦 Heap / Priority Queue
+### 👉 Heap / Priority Queue
 
 - [ ] Min Heap & Max Heap
 - [ ] Heap operations (insert, extract, heapify)
@@ -221,11 +215,9 @@
 
 ---
 
-### 🔴 Phase 4: Interview Prep (Week 15–16)
+## Phase 4: Interview Prep (Week 15–16)
 
-> **Goal:** Pattern recognition and mock interview practice.
-
-#### 📦 14 Must-Know Problem Solving Patterns
+### 👉 14 Must-Know Problem Solving Patterns
 
 - [ ] Two Pointers
 - [ ] Sliding Window
@@ -242,83 +234,10 @@
 - [ ] K-way Merge
 - [ ] Topological Sort
 
-#### 📦 Interview Soft Skills
+### 👉 Interview Soft Skills
 
 - [ ] Practice "thinking out loud" while solving
 - [ ] Always start with brute force → then optimize
 - [ ] Identify and handle edge cases before coding
 - [ ] Always state Time & Space complexity after solving
 - [ ] Ask clarifying questions before jumping into code
-
----
-
-## 🗂️ Suggested GitHub Repository Structure
-
-```
-dsa-journey/
-├── README.md                    ← This file
-├── phase-1-foundation/
-│   ├── big-o/
-│   ├── arrays/
-│   └── strings/
-├── phase-2-core/
-│   ├── linked-list/
-│   ├── stack-queue/
-│   ├── hashmap/
-│   ├── recursion/
-│   ├── sorting/
-│   └── binary-search/
-├── phase-3-advanced/
-│   ├── trees/
-│   ├── graphs/
-│   ├── dynamic-programming/
-│   └── heap/
-├── phase-4-interview/
-│   ├── patterns/
-│   └── mock-problems/
-└── notes/
-    └── cheatsheet.md
-```
-
----
-
-## 🌐 Recommended Resources
-
-| Resource      | Type                     | Link              |
-| ------------- | ------------------------ | ----------------- |
-| LeetCode      | Practice Platform        | leetcode.com      |
-| NeetCode      | Video + Curated Problems | neetcode.io       |
-| Visualgo      | Algorithm Visualizer     | visualgo.net      |
-| CS50 DSA      | Free Course              | cs50.harvard.edu  |
-| GeeksForGeeks | Reference & Articles     | geeksforgeeks.org |
-
----
-
-## 🏷️ Commit Message Convention
-
-```
-✅ feat: solve Two Sum using HashMap
-📝 notes: add Big-O complexity notes
-🔁 refactor: optimize Merge Sort solution
-🐛 fix: handle edge case in Binary Search
-```
-
----
-
-## 🎯 Interview Focus by Company Type
-
-| Company Type     | Focus Areas                                 |
-| ---------------- | ------------------------------------------- |
-| Startup          | Array, HashMap, String, Basic Tree          |
-| Mid-size         | + LinkedList, Stack, Sorting, Binary Search |
-| FAANG / Top Tier | + Graph, DP, Heap, Advanced Tree            |
-
----
-
-> **Remember:** A little every day. Consistency beats intensity.  
-> Commit every solution — that's your proof of progress. 💪
-
----
-
-_Last Updated: 2026_  
-_Maintained by: [Imam Hassan Rimon]_
